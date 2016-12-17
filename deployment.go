@@ -16,3 +16,8 @@ func (s *Skube) ListDeployments(namespace string) {
 	fmt.Println(string(out))
 
 }
+
+// http://kubernetes.io/docs/api-reference/extensions/v1beta1/operations/
+func (s *Skube) UpdateDeployment(namespace string, deployment string, updates []byte) {
+	url := fmt.Sprintf("%s/apis/extentions/")
+}
