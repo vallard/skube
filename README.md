@@ -22,9 +22,10 @@ func main() {
 	if err != nil {
 		panic()
 	}
-	
+	// create a new skube client
 	k := skube.New("https://mykubernetes:6443", token, ca)
 	
+	// do skube stuff with it. 
 	deployments, err := k.ListDeployments("")
 	
 	if err ! = nil {
