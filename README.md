@@ -28,7 +28,7 @@ func main() {
 	// do skube stuff with it. 
 	deployments, err := k.ListDeployments("")
 	
-	if err ! = nil {
+	if err != nil {
 		panic()
 	}
 	
